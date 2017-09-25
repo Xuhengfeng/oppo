@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>OPPO 手机商城</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link  rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tiyan.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=e3ZohdqyB0RL98hFOiC29xqh"></script>
+    <script src="js/tiyan.js"></script>
+</head>
+<body>
+	<div id="box">
+		<div id="header">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-md-9 hidden-sm hidden-xs"></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="#">登录</a></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="#">注册</a></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="#">Global</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="nav">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-1 col-md-1">
+							<div class="row">
+								<div class="hidden-lg hidden-md col-sm-2 col-xs-2">
+								    <span id="daohang" class="glyphicon glyphicon-menu-hamburger"></span>
+	                                <div id="dian">
+										<ul>
+											<li><a href="#">首页</a></li>
+											<li><a href="#">产品</a></li>
+											<li><a href="#">商城</a></li>
+											<li><a href="#">体验店</a></li>
+											<li><a href="#">服务</a></li>
+											<li><a href="#">ColorOS</a></li>
+											<li><a href="#">社区</a></li>
+											<li><a href="#">Global</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-8 col-xs-8">
+									<img src="img/1.png">
+								</div>
+								<div class="hidden-lg hidden-md col-sm-2 col-xs-2">
+								   <span id="tubiao">图标</span>
+								   <div id="right">
+								   	   <ul>
+								   	   	   <li><a href="#">我的订单</a></li>
+								   	   	   <li><a href="#">配送地址</a></li>
+								   	   	   <li><a href="#">优惠券</a></li>
+								   	   	   <li><a href="#">账户信息</a></li>
+								   	   	   <li><a href="#">购物车</a></li>
+								   	   	   <li><a href="#">登录</a></li>
+								   	   </ul>
+								   </div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 hidden-sm hidden-xs"></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="index.html">首页</a></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="#">产品</a></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="shangcheng.html">商城</a></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="#">体验店</a></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="#">服务</a></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="#">ColorOS</a></div>
+						<div class="col-lg-1 col-md-1 hidden-sm hidden-xs"><a href="#">社区</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="hidden-lg hidden-md col-sm-12 col-xs-12" id="img1">
+						<img src="img/7.jpg">
+					</div>
+					<div class="col-lg-12 col-md-12 hidden-sm hidden-xs" id="img2">
+						<img src="img/6.jpg">
+					</div>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="shuru">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-1 col-xs-1"></div>
+							<div class="col-lg-6 col-md-6 col-sm-10 col-xs-10">
+							    <form style="width:100%">
+                                   <div class="form-group">
+                                        <div class="input-group" style="width:100%;box-shadow:0 0 1px 6px #ccc;border-radius:5px;">
+                                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="深圳市" style="height:70px;width:100%;font-size:20px;">
+									        <div class="input-group-addon" style="background:green;width:25%;color:#fff;font-size:20px;">搜索</div>
+                                        </div>
+                                    </div>
+                                </form>
+							<div class="col-lg-3 col-md-3 col-sm-1 col-xs-1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="dz">
+			<div class="container-fluid">
+				<div class="row" style="margin-left:0 !important;margin-right:0 !important;">
+				    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+				    <div class="col-lg-2 col-md-2 col-sm-12">请选择查询的城市：</div>
+				    <div class="col-lg-2 col-md-2 col-sm-12">
+				    	<select>
+				    		<option>广东省</option>
+				    		<option>河南省</option>
+				    		<option>湖南省</option>
+				    		<option>湖北省</option>
+				    		<option>河北省</option>
+				    		<option>江西省</option>
+				    		<option>广西省</option>
+				    		<option>云南省</option>
+				    		<option>福建省</option>
+				    		<option>浙江省</option>
+				    		<option>江苏省</option>
+				    		<option>安徽省</option>
+				    		<option>山东省</option>
+				    	</select>
+				    </div>
+				    <div class="col-lg-2 col-md-2 col-sm-12">
+				    	<select>
+				    		<option>深圳市</option>
+				    		<option>东莞市</option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    	</select>
+				    </div>
+				    <div class="col-lg-2 col-md-2 col-sm-12">
+				    	<select>
+				    		<option>所在门店类型</option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    		<option></option>
+				    	</select>
+				    </div>
+				    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+				</div>
+			</div>
+		</div>
+		<div id="ditu">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-9 col-md-9 hidden-sm hidden-xs">
+							<div id="allmap"></div>
+						</div>
+						<div class="col-lg-3 col-md-3 hidden-sm hidden-xs">
+							<p class="one">标准服务</p>
+							<ul class="two">
+								<li>
+								   <span class="glyphicon glyphicon-download-alt"></span>
+								   <span>免费充电</span>
+								</li>
+								<li>
+								   <span class="glyphicon glyphicon-wrench"></span>
+								   <span>手机保养+维护</span>
+								</li>
+								<li>
+								    <span class="glyphicon glyphicon-sort-by-attributes-alt"></span>
+									<span>免费WIFI</span>
+								</li>
+								<li>
+									<span class="glyphicon glyphicon-filter"></span>
+									<span>免费畅饮</span>
+								</li>
+							</ul>
+							<p class="three">会员服务</p>
+							<ul class="four">
+								<li>
+								   <span class="glyphicon glyphicon-phone"></span>
+								   <span>手机贴膜</span>
+								</li>
+								<li>
+								   <span class="glyphicon glyphicon-heart-empty"></span>
+								   <span>积分兑换礼品</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="shenzhen">深圳市 · 体验店（63）</div>
+		<div id="item">
+			<div id="item_1">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/3.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2  col-xs-12" id="col">
+							    <span>旗舰店</span>
+							</div>
+							<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_2" class="even">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/4.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_3">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/5.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_4" class="even">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/6.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_5">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/7.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_6" class="even">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/8.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_7">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/9.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_8" class="even">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/10.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_9">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/11.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_10" class="even">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/12.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_11">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/13.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_12" class="even">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/14.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_13">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/15.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_14" class="even">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/16.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="item_15">
+				<div class="container-fluid">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3" id="da">
+								<div id="left1">
+								    <img src="img/17.png">
+								</div>
+								<div id="right1">
+									<p>深圳沙井京基百纳商场店</p>
+									<p><a href="#">查看详情</a></p>
+								</div>
+							</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">旗舰店</div>
+							<div class="col-lg-5 col-md-5 col-sm-5" id="col">广东省深圳市宝安区宝安沙井沙井街道京基百纳5楼L508</div>
+							<div class="col-lg-2 col-md-2 col-sm-2" id="col">0755-27200517</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btn-group btn-group-lg"  style="width:456px;margin:20px auto;overflow:hidden;display:block;"  >
+	        <button class="btn btn-primary"><<</button>
+	        <button class="btn btn-default">1</button>
+	        <button class="btn btn-default">2</button>
+	        <button class="btn btn-default">3</button>
+	        <button class="btn btn-default">4</button>
+	        <button class="btn btn-default">5</button>
+	        <button class="btn btn-default">6</button>
+	        <button class="btn btn-default">7</button>
+	        <button class="btn btn-default">8</button>
+	        <button class="btn btn-primary">>></button>
+	    </div>
+		<div id="footer">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row" id="row">
+						<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" id="one">
+							<dl>
+								<dt><a href="#">推荐机型</a></dt>
+								<dd><a href="#">R9s</a></dd>
+								<dd><a href="#">R9s Plus</a></dd>
+								<dd><a href="#">A57</a></dd>
+								<dd><a href="#">A59s</a></dd>
+							</dl>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" id="two">
+							<dl>
+								<dt><a href="#">在线购买</a></dt>
+								<dd><a href="#">官方商城</a></dd>
+								<dd><a href="#">购物指南</a></dd>
+								<dd><a href="#">官方授权网店</a></dd>
+							</dl>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" id="three">
+							<dl>
+								<dt><a href="#">服务</a></dt>
+								<dd><a href="#">服务网点查询</a></dd>
+								<dd><a href="#">零配件价格查询</a></dd>
+								<dd><a href="#">云服务</a></dd>
+							</dl>
+						</div>
+						<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs" id="four">
+							<dl>
+								<dt><a href="#">关于我们</a></dt>
+								<dd><a href="#">关于OPPO</a></dd>
+								<dd><a href="#">加入我们</a></dd>
+								<dd><a href="#">采购相关</a></dd>
+								<dd><a href="#">发布会回顾</a></dd>
+							</dl>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4" id="five">
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 col-lg-push-0 col-md-push-0 col-sm-push-0 col-xs-push-6">
+									<a href="#"><img src="img/2.png"></a>
+								</div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-6 col-lg-pull-0 col-md-pull-0 col-sm-pull-0 col-xs-pull-6"><span class="top">4001-666-888</span><span class="bottom">(24小时全国服务热线)</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wei"></div>
+	</div>
+	<script type="text/javascript">
+		var map = new BMap.Map("allmap");
+	    map.centerAndZoom("深圳",11);
+	    map.enableScrollWheelZoom(true);
+        map.addEventListener("click", function(e){    
+	  		var e = e || event;
+	  		var pt = e.point;
+			getPos(pt)
+		  	var marker = new BMap.Marker(e.point); 
+		  	console.log(marker);
+			map.addOverlay(marker);
+	    });
+	</script>
+</body>
+</html>
