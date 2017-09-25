@@ -1,0 +1,10 @@
+$(function(){
+	$('#daohang').on('click',function(){
+		$('#dian').toggle();
+		$('#right').hide();
+	})
+	$('#tubiao').on('click',function(){
+		$('#right').toggle();
+		$('#dian').hide();
+	})
+})
